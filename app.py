@@ -12,7 +12,7 @@ model = joblib.load("model.pkl")
 def main():
     st.title('Machine Learning Heart Attack Prediction Model Deployment')
 
-    age = st.number_input("Age", min_value=1, max_value=120, value=40) 
+    age = st.number_input("Age", min_value=1, max_value=100, value=40) 
     sex = st.selectbox("Sex (0 = Female, 1 = Male)", [0,1]) 
     cp = st.selectbox("Chest Pain Type (0-3)", [0,1,2,3]) 
     trestbps = st.number_input("Resting Blood Pressure", min_value=50, max_value=250, value=120) 
